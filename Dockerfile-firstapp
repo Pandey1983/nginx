@@ -1,0 +1,4 @@
+FROM nginx
+RUN mkdir /usr/share/nginx/html/firstapp
+COPY index.html /usr/share/nginx/html/firstapp
+CMD ["nginx", "-g", "daemon off;"]
