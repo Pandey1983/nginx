@@ -1,4 +1,5 @@
 FROM nginx
 RUN mkdir /usr/share/nginx/html/firstapp
 COPY index.html /usr/share/nginx/html/firstapp
+EXPOSE 5000
 CMD ["nginx", "-g", "daemon off;"]
